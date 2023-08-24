@@ -1,0 +1,88 @@
+*{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+    background-color: black;
+}
+.head{
+    height:80px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    color:black;
+    border-radius: 15px;
+}
+.pic,.text{
+    height: 700px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pic div,.text div{
+    width:50%;
+    height:100%;
+}
+#first_text h1{
+    text-align: center;
+    font-weight: bold;
+    font-size:50px;
+    color:white;
+}
+#first_text p{
+    font-size:35px;
+    color:white;
+}
+#first_image{
+    background-image: url('img/makkan.png');
+}
+#second_image{
+    background-image: url('img/redhe.png');
+}
+#thired_image{
+    background-image:url('img/balram.png');
+}
+#fourth_image{
+    background-image: url('img/flute.png');
+}
+#fifth_image{
+    background-image: url('img/updesh.png');
+}
+@media(max-width:480px){
+    .pic , .text{
+        width:100%;
+        height: 1200px;
+        display:flex;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+    .text{
+        flex-direction: column-reverse;
+    }
+    .pic div,.text div{
+        height:50%;
+        width:100%;
+        text-align: center;
+    }
+    #first_text h1{
+        font-size:35px;
+        color: white;
+    }
+    #first_text p{
+        font-size:20px;
+        color: white;
+    }
+    #first_image,#second_image,#thired_image,#fourth_image,#fifth_image{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:80%;
+    }
+}
+@media (max-width:768px){
+    .pic,.text{
+        height:800px;
+    }
+}
+
